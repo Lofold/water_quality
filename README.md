@@ -36,7 +36,7 @@
    install.packages(c("R.matlab", "MASS", "nnet", "ggplot2", "writexl"))
    ```
 2. Поместите `water_quality.mat` в папку проекта
-3. Запустите `analysis.R` в RStudio
+3. Запустите `water_quality.R` в RStudio
 
 ---
 
