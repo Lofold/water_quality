@@ -192,7 +192,7 @@ ggplot(plot_df, aes(x = LD1, y = LD2, color = quality_cat)) +
   geom_point(size = 1.5, alpha = 0.6) +
   stat_ellipse(level = 0.95) +
   theme_minimal() +
-  labs(title = "Диаграмма рассеяния по дискриминантным осям",
+  labs(title = "Диаграмма рассеяния дискриминант-\nным осям",
        x = paste0("LD1 (", round(lda_model$svd[1]^2 / sum(lda_model$svd^2) * 100, 1), "%)"),
        y = paste0("LD2 (", round(lda_model$svd[2]^2 / sum(lda_model$svd^2) * 100, 1), "%)"),
        color = "Качество воды")
